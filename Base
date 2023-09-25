@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home|Activity-7</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/48f30b29a6.js" crossorigin="anonymous"></script>
+        <style>
+        *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        body{
+            margin: 0% 10%;
+            background-color: black;
+        }
+        .p-1{
+            display: flex;
+            font-family: 'Cormorant Garamond', serif;
+            background-color: black;
+            color: white;
+            padding:10px 0px; 
+        }
+        .p-1 h3{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 16%;
+            cursor:none;
+        }
+        .p-1 ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .p-1 li{
+            padding: 0px 15px;
+        }
+        .p-1 a{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            background-color:yellow;
+            color: black;
+            padding: 10px 25px;
+            
+            cursor:pointer;
+            }
+        .p-1 i{
+            display: none;
+        }
+        .p-2{
+            width:100%;
+            background-color: black;
+            color:white;
+            padding: 10px 100px;
+        }
+        .p-2 h1{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 58px;
+            width:60%;
+        }
+        .p-2 p{
+            font-family: 'Josefin Sans', sans-serif;
+            word-spacing: 3px;
+            color: darkgrey;
+            width:60%;
+        }
+        .p-3{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .p-3 img{
+            padding:45px;
+        }
+        .p-4{
+            display: flex;
+        }
+        .img1{
+            padding:10px 20px;
+        }
+        .img1 h3{
+            font-family: 'Cormorant Garamond', serif;
+            color: white;
+            font-size: 32px;
+            padding:15px;
+        }
+        .img1 p{
+            font-family: 'Josefin Sans', sans-serif;
+            color: darkgrey;
+            padding:10px;
+        }
+        .img2{
+            padding:10px 20px;
+        }
+        .img2 h3{
+            font-family: 'Cormorant Garamond', serif;
+            color:white;
+            font-size: 32px;
+            padding:15px;
+        }
+        .img2 p{
+            font-family: 'Josefin Sans', sans-serif;
+            color:darkgrey;
+            padding:10px;
+        }
+        .p-5{
+            display: flex;
+            flex-wrap: wrap;
+            background-color:#414141;
+            color: white;
+            margin:0px -152px;
+            padding: 60px 200px;
+        }
+        .left{
+            width:46%;
+            margin-right: 8%;
+        }
+        .left h3{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 40px;
+        }
+        .left p{
+            font-family: 'Josefin Sans', sans-serif;
+        }
+        .right{
+            width:45%;
+            font-family: 'Josefin Sans', sans-serif;
+            line-height: 25px;
+        }
+        .p-6{
+            padding: 60px 75px;
+            background-color: black;
+            color: white;
+        }
+        .text{
+            width:46%;
+            padding: 25px 0px;
+        }
+        .text h3{
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 39px;
+            color:white;
+        }
+        .text p{
+            font-family: 'Josefin Sans', sans-serif;
+            color:darkgrey;
+            padding:10px 0px;
+        }
+        .btn{
+            background-color:yellow;
+            color: black;
+            padding: 8px 22px;
+            width: 124px;
+        }
+        .p-7{
+            display:flex;
+            flex-wrap: wrap;
+            padding: 30px 100px;
+            margin:0px -152px;
+            background-color:#414141;
+            color: white;
+        }
+        .p-7 h3{
+            display: flex;
+            justify-content: start;
+            width:90%;
+            }
+        .p-7 ul{
+            display:flex;
+            justify-content: end;
+            }
+        .p-7 li{
+            padding:0px 5px;
+        }
+        @media screen and (max-width:768px) {
+        .p-1{
+            margin: 10px 0px; 
+        }
+        .p-1 ul {
+            display: none;
+        }
+        .p-1 a{
+            display: none;
+        }
+        .p-1 h3{
+            width:85%;
+        }
+        .p-1 i{
+            display: flex;
+            align-items: center;
+        }
+        .p-2{
+            padding:20px 0px;
+        }
+        .p-2 h1{
+            width:100%;
+            font-size: 35px;
+        }
+        .p-2 p{
+            width:100%;
+        }
+        .p-3 img{
+            padding:5px 15px;
+        }
+        .p-4{
+            display: inline;
+        }
+        .img1{
+            padding:5px;
+        }
+        .img1 img{
+            width:350px;
+        }
+        .img2{
+            padding:5px;
+        }
+        .img2 img{
+            width:350px;
+        }
+        .p-5{
+            margin: 0% -44px;
+            padding: 50px;
+        }
+        .left{
+            width: 100%;
+        }
+        .right{
+            width:100%;
+        }
+        .p-6{
+            padding: 25px;
+        }
+        .text{
+            width: 100%;
+        }
+        .p-7{
+            margin: 0% -44px;
+            padding: 15px;
+        }
+        .p-7 h3{
+            width:70%;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="p-1">
+            <h3>Johnathan Specter</h3>
+            <ul type="none">
+                <li>Articles</li>
+                <li>Chats</li>
+                <li>Awards</li>
+                <li>About</li>
+            </ul>
+            <a>Get in Touch</a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="p-2">
+        <h1>Helping companies build better, scalable software.</h1>
+        <p>Award winning web developer and author, with over 15+ years of working experience with Fortune 500 companies like Apple, Google, Facebook, and more.</p>
+        </div>
+        <div class="p-3">
+            <div>
+                <a href="https://www.walmart.com/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/Walmart.svg"></a>
+            </div>
+            <div>
+                <a href="https://www.jpmorgan.com/global" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/JP%20Morgan.svg"></a>
+            </div>
+            <div>
+                <a href="https://indianvisaonline.gov.in/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/Visa.svg"></a>
+            </div>
+            <div>
+                <a href="https://tinder.com/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/Tinder.svg"></a>
+            </div>
+            <div>
+                <a href="https://www.samsung.com/in/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/Samsung.svg"></a>
+            </div>
+            <div>
+                <a href="https://www.verizon.com/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Logos/Verizon.svg"></a>
+            </div>
+        </div> 
+        <div class="p-4">
+            <div class="img1">
+                <div>
+                    <img src="C:/Users/DEL.L/Downloads/Asset CSS Activity/Assets/Spense.png">
+                </div>
+                <div>
+                    <h3>Spense.com <i class="fa-solid fa-arrow-right"></i></h3>
+                    <p>Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid.Project in collaboration with Codewell.cc</p>
+                </div>
+            </div>
+            <div class="img2">
+                <div>
+                    <img src="C:/Users/DEL.L/Downloads/Asset CSS Activity/Assets/YelpCamp.png">
+                </div>
+                <div>
+                    <h3>YelpCamp.com <i class="fa-solid fa-arrow-right"></i></h3>
+                    <p>Rethinking the way writers get paid, an open-source platform designed to help writers focus more on writing, and less on when and how they'll get paid.Project in collaboration with Codewell.cc</p>
+                </div>
+            </div>
+        </div>
+        <div class="p-5">
+            <div class="left">
+                <h3>A co-founder at one of the world's largest communities.</h3>
+                <br>
+                <p>The combined experience I have working at the top Fortune 500 companies has allowed me to developer a skillset thet helps me in not just development, but in every aspect of any business.</p>
+                <br>
+                <p>I'm proud to announce thet i am now working at one of the world's largest communities teaching young minds about how to sell yourself as a developer and open them to a whole new world of opportunities.</p>
+            </div>
+            <div class="right">
+                <p>As a developer, you have everything avaliable to you and all that's holdinng you back is yourself.</p>
+                <br>
+                <p>A qoute I live by perfectly illustrates what I mean.</p>
+                <br>
+                <p>"How big would you dream, if you knew you wouldn't fail?"</p>
+                <P>You've already gone through the hardest parts being a developer, it's time to elevate your skills and become a leaber in something you're passionate about.</P>
+                <br>
+                <p>I'm happy to chat over coffee some time about how i can help your company.</p>   
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="text">
+                <h3>Interested in working with me?</h3>
+                <p>I'm active on all social media platforms listed below, but you can also me an email and i will get back to you within 24-48 hours.</p>
+            </div>
+            <div class="btn">
+                <a>Get in touch</a>
+            </div>
+        </div>
+        <div class="p-7">
+            <h3>Johnathan Specter</h3>
+            <ul type="none">
+            <li><a href="https://twitter.com/?lang=en-in" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Social%20Icons/Twitter.svg"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Social%20Icons/LinkedIn.svg"></a></li>
+            <li><a href="https://github.com/" target="_blank"><img src="file:///C:/Users/DEL.L/Downloads/Asset%20CSS%20Activity/Assets/Social%20Icons/Github.svg"></a></li>
+            </ul>
+        </div>
+    </body>
+</html>
